@@ -130,7 +130,7 @@
     <value>en-US</value>
   </data>
   <data name="Setting.FooterText.Text" xml:space="preserve">
-    <value>Copyright [year] by Hotcakes Commerce, LLC</value>
+    <value>Copyright [year] by Upendo Ventures, LLC</value>
   </data>
   <data name="Tab.404ErrorPage..Module.Content.Text" xml:space="preserve">
     <value>Sorry, the page you are looking for cannot be found and might have been removed, had its name changed, or is temporarily unavailable. It is recommended that you start again from the homepage. Feel free to contact us if the problem persists or if you definitely cannot find what you’re looking for.</value>
@@ -259,17 +259,50 @@ Fax: (555) 555-4564</value>
   <data name="Tab.Home.CompanyIntro.Text" xml:space="preserve">
     <value>Hotcakes Commerce is an open source e-commerce CMS solution built for everyone on your team. Merchants, developers, designers, and even your customers will enjoy all of the benefits Hotcakes Commerce provides.</value>
   </data>
+  <data name="Tab.Home.PageName.Title" xml:space="preserve">
+    <value>Home | An online store built using Hotcakes Commerce CMS</value>
+  </data>
   <data name="Tab.Home.Header.Content" xml:space="preserve">
     <value>Hotcakes Commerce makes it easy for you to install and use the Hotcakes Platform.  We have multiple options to suit your needs, whether you want to try the CMS out in the cloud, install it on your own server, or use it on your desktop for development.  You are just a click away from getting started with Hotcakes Commerce.</value>
   </data>
-  <data name="Tab.Home.Header.Title" xml:space="preserve">
-    <value>Every journey begins with the first step. </value>
+  <data name="Tab.Home.Header.NextSteps" xml:space="preserve">
+    <value>Next Steps</value>
   </data>
-  <data name="Tab.Home.PageName.Content" xml:space="preserve">
-    <value>Home</value>
+  <data name="Tab.Home.Step1.Header" xml:space="preserve">
+    <value>Step 1</value>
   </data>
-  <data name="Tab.Home.PageName.Title" xml:space="preserve">
-    <value>Home</value>
+  <data name="Tab.Home.Step1.Description" xml:space="preserve">
+    <value>Add your store address, then complete the rest of the wizard.</value>
+  </data>
+  <data name="Tab.Home.Step2.Header" xml:space="preserve">
+    <value>Step 2</value>
+  </data>
+  <data name="Tab.Home.Step2.Description" xml:space="preserve">
+    <value>Don't know what products to add yet? Add some samples in 1-click!</value>
+  </data>
+  <data name="Tab.Home.StepEnjoy.Header" xml:space="preserve">
+    <value>Enjoy building your new online store!</value>
+  </data>
+  <data name="Tab.Home.HccCloud.Header" xml:space="preserve">
+    <value>Want to serve Hotcakes in the Cloud?</value>
+  </data>
+  <data name="Tab.Home.SeeHow.Description" xml:space="preserve">
+    <value>Hotcakes Commerce is a trusted open-source e-commerce CMS that's instantly scalable, secure, and stable with support available should you ever need it. Hotcakes helps you grow your store in ways that allow you to focus more time on growing your business.</value>
+  </data>
+  <data name="Tab.Home.SeeHow.Link.Text" xml:space="preserve">
+    <value>See How</value>
+  </data>
+  <data name="Tab.Home.GetHelp.Header" xml:space="preserve">
+    <value>Got a Question? Get an Answer!</value>
+  </data>
+  <data name="Tab.Home.GetHelp.Link.Text" xml:space="preserve">
+    <value>Get Help</value>
+  </data>
+  <data name="Tab.Home.GetHelp.Para1" xml:space="preserve">
+    <value>Our community is excited to talk to you and help you with anything else Hotcakes. All you need to do is ask.</value>
+  </data>
+  <data name="Tab.Home.GetHelp.Para2" xml:space="preserve">
+    <value>You can also find existing documentation and videos to help you, or simply create a new forum post.</value>
   </data>
   <data name="Tab.Home.SocialLinks.Facebook.Link" xml:space="preserve">
     <value>https://facebook.com/UpendoVentures</value>
@@ -357,16 +390,16 @@ Fax: (555) 555-4564</value>
   </data>
   <data name="Tab.MyFriends.FooterRightPane.Module.Content.1.Text" xml:space="preserve">
     <value>
-3457 W. Somewhere Street.
-Someplace, CA 12345</value>
+548 Market St. #65401
+San Francisco, CA 94104</value>
   </data>
   <data name="Tab.MyFriends.FooterRightPane.Module.Content.2.Text" xml:space="preserve">
     <value>
-Phone: (555) 555-4563</value>
+Phone: (650) 381-9160</value>
   </data>
   <data name="Tab.MyFriends.FooterRightPane.Module.Content.3.Text" xml:space="preserve">
     <value>
-Fax: (555) 555-4564</value>
+Fax: (555) 555-5555</value>
   </data>
   <data name="Tab.MyFriends.FooterRightPane.Module.Title.Text" xml:space="preserve">
     <value>Contact Us</value>
@@ -453,20 +486,20 @@ Fax: (555) 555-4564</value>
     <value>Connect</value>
   </data>
   <data name="Tab.MyMessages.FooterRightPane.Module.Content.0.Text" xml:space="preserve">
-    <value>Awesome Cycles, Inc.</value>
+    <value>Upendo Ventures, LLC</value>
   </data>
   <data name="Tab.MyMessages.FooterRightPane.Module.Content.1.Text" xml:space="preserve">
     <value>
-3457 W. Somewhere Street.
-Someplace, CA 12345</value>
+548 Market St. #65401
+San Francisco, CA 94104</value>
   </data>
   <data name="Tab.MyMessages.FooterRightPane.Module.Content.2.Text" xml:space="preserve">
     <value>
-Phone: (555) 555-4563</value>
+Phone: (650) 381-9160</value>
   </data>
   <data name="Tab.MyMessages.FooterRightPane.Module.Content.3.Text" xml:space="preserve">
     <value>
-Fax: (555) 555-4564</value>
+Fax: (555) 555-5555</value>
   </data>
   <data name="Tab.MyMessages.FooterRightPane.Module.Title.Text" xml:space="preserve">
     <value>Contact Us</value>
@@ -554,12 +587,12 @@ Fax: (555) 555-4564</value>
   </data>
   <data name="Tab.MyProfile.FooterRightPane.Module.Content.1.Text" xml:space="preserve">
     <value>
-3457 W. Somewhere Street.
-Someplace, CA 12345</value>
+548 Market St. #65401
+San Francisco, CA 94104</value>
   </data>
   <data name="Tab.MyProfile.FooterRightPane.Module.Content.2.Text" xml:space="preserve">
     <value>
-Phone: (555) 555-4563</value>
+Phone: (650) 381-9160</value>
   </data>
   <data name="Tab.MyProfile.FooterRightPane.Module.Content.3.Text" xml:space="preserve">
     <value>
