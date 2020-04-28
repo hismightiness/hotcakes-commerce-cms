@@ -4,13 +4,14 @@
     <script name="Schema">DotNetNuke.Schema</script>
     <script name="Data">DotNetNuke.Data</script>
   </scripts>
-  <version>07.00.00</version>
+  <version>08.00.04</version>
+  <supportLocalization>true</supportLocalization>
   <installCulture>en-US</installCulture>
   <superuser>
     <firstname>SuperUser</firstname>
     <lastname>Account</lastname>
     <username>host</username>
-    <password>H0tcakes</password>
+    <password>H0tcakes!</password>
     <email>you@example.com</email>
     <locale>en-US</locale>
     <updatepassword>false</updatepassword>
@@ -26,26 +27,31 @@
     <AuthenticatedCacheability>4</AuthenticatedCacheability>
     <UnauthenticatedCacheability>4</UnauthenticatedCacheability>
     <AutoAccountUnlockDuration>10</AutoAccountUnlockDuration>
-    <AutoAddPortalAlias>Y</AutoAddPortalAlias>
+    <AutoAddPortalAlias>N</AutoAddPortalAlias>
     <CheckUpgrade>Y</CheckUpgrade>
-    <Copyright>Y</Copyright>
+    <ControlPanel>Admin/ControlPanel/ControlBar.ascx</ControlPanel>
+    <IgnoreControlPanelWrapper>Y</IgnoreControlPanelWrapper>
+    <Copyright>N</Copyright>
     <DemoPeriod></DemoPeriod>
     <DemoSignup>N</DemoSignup>
     <DisplayBetaNotice>Y</DisplayBetaNotice>
+    <DnnImprovementProgram>Y</DnnImprovementProgram>
     <EnableFileAutoSync>Y</EnableFileAutoSync>
     <EnableContentLocalization>N</EnableContentLocalization>
-    <EnableModuleOnLineHelp>Y</EnableModuleOnLineHelp>
+    <EnableModuleOnLineHelp>N</EnableModuleOnLineHelp>
     <EnableRequestFilters>N</EnableRequestFilters>
+    <EnableStrengthMeter>Y</EnableStrengthMeter>
     <EncryptionKey Secure="True"></EncryptionKey>
     <EventLogBuffer>N</EventLogBuffer>
-    <FileExtensions>swf,jpg,jpeg,jpe,gif,bmp,png,svg,ttf,eot,woff,doc,docx,xls,xlsx,ppt,pptx,pdf,txt,xml,xsl,xsd,css,zip,rar,template,htmtemplate,ico,avi,mpg,mpeg,mp3,wmv,mov,wav</FileExtensions>
-    <HelpURL>https://hotcakes.org/Community</HelpURL>
+    <FileExtensions>jpg,jpeg,jpe,gif,bmp,png,svg,ttf,eot,woff,doc,docx,xls,xlsx,ppt,pptx,pdf,txt,xsl,css,zip,rar,template,htmtemplate,ico,avi,mpg,mpeg,mp3,wmv,mov,wav,mp4,webm,ogv</FileExtensions>
+    <ForceLogoutAfterPasswordChanged>Y</ForceLogoutAfterPasswordChanged>
+    <HelpURL>https://hotcakescommerce.zendesk.com/hc</HelpURL>
     <HostCurrency>USD</HostCurrency>
-    <HostEmail>support@hotcakescommerce.com</HostEmail>
+    <HostEmail></HostEmail>
     <HostFee></HostFee>
     <HostPortalId>0</HostPortalId>
     <HostSpace></HostSpace>
-    <HostTitle>Hotcakes Commerce, LLC</HostTitle>
+    <HostTitle>Hotcakes Commerce</HostTitle>
     <HostURL>https://hotcakes.org</HostURL>
     <HttpCompression>0</HttpCompression>
     <HttpCompressionLevel>0</HttpCompressionLevel>
@@ -77,15 +83,15 @@
   <desktopmodules/>
   <portals>
     <portal>
-      <portalname>My E-Commerce CMS</portalname>
+      <portalname>My Hotcakes Commerce Store</portalname>
       <administrator>
         <firstname>Administrator</firstname>
         <lastname>Account</lastname>
-        <username>admin</username>
-        <password>H0tcakes</password>
-        <email>admin@change.me</email>
+        <username>hccadmin</username>
+        <password>Hotcakes!</password>
+        <email>your@example.com</email>
       </administrator>
-      <description>My E-Commerce CMS</description>
+      <description>Hotcakes Commerce E-Commerce CMS</description>
       <keywords>Hotcakes, ECommerce, E-Commerce, Commerce, Content, Management, CMS</keywords>
       <templatefile>Default Website.template</templatefile>
       <portalaliases>
