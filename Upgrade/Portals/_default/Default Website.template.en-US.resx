@@ -256,11 +256,8 @@ Fax: (555) 555-4564</value>
   <data name="Tab.Home.PageName.Content" xml:space="preserve">
     <value>Home</value>
   </data>
-  <data name="Tab.Home.CompanyIntro.Text" xml:space="preserve">
-    <value>Hotcakes Commerce is an open source e-commerce CMS solution built for everyone on your team. Merchants, developers, designers, and even your customers will enjoy all of the benefits Hotcakes Commerce provides.</value>
-  </data>
   <data name="Tab.Home.PageName.Title" xml:space="preserve">
-    <value>Home | An online store built using Hotcakes Commerce CMS</value>
+    <value>Home</value>
   </data>
   <data name="Tab.Home.Header.Content" xml:space="preserve">
     <value>Hotcakes Commerce makes it easy for you to install and use the Hotcakes Platform.  We have multiple options to suit your needs, whether you want to try the CMS out in the cloud, install it on your own server, or use it on your desktop for development.  You are just a click away from getting started with Hotcakes Commerce.</value>
