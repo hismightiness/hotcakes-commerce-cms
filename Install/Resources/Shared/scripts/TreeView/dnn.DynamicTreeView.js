@@ -1,7 +1,9 @@
 ﻿; if (typeof window.dnn === "undefined" || window.dnn === null) { window.dnn = {}; }; //var dnn = dnn || {};
 
-// Copyright (c) .NET Foundation. All rights reserved.
-// Licensed under the MIT License. See LICENSE file in the project root for full license information.
+// DotNetNuke® - http://www.dotnetnuke.com
+// Copyright (c) 2002-2018
+// by DotNetNuke Corporation
+// All Rights Reserved
 
 (function ($, window, document, undefined) {
     "use strict";
@@ -726,11 +728,7 @@
 
         getChildren: function (parentId, sortOrder, searchText, onGetChildrenCallback) {
             var onGetChildrenHandler = $.proxy(this._onGetChildren, this, onGetChildrenCallback);
-            var callGetParams = { parentId: parentId, sortOrder: sortOrder, searchText: searchText, includeAllTypes: true };
-            if (this.options.includeDisabled) {
-                callGetParams.includeDisabled = this.options.includeDisabled;
-            }
-            this._callGet(callGetParams, onGetChildrenHandler, this.options.getNodeDescendantsMethod);
+            this._callGet({ parentId: parentId, sortOrder: sortOrder, searchText: searchText, includeAllTypes: true }, onGetChildrenHandler, this.options.getNodeDescendantsMethod);
         },
 
         _onGetChildren: function(onGetChildrenCallback, data, textStatus, jqXhr) {
@@ -740,20 +738,12 @@
 
         search: function(searchText, sortOrder, onSearchCallback) {
             var onSearchHandler = $.proxy(this._onGetTree, this, onSearchCallback);
-            var callGetParams = { searchText: searchText, sortOrder: sortOrder, includeAllTypes: true };
-            if (this.options.includeDisabled) {
-                callGetParams.includeDisabled = this.options.includeDisabled;
-            }
-            this._callGet(callGetParams, onSearchHandler, this.options.searchTreeMethod);
+            this._callGet({ searchText: searchText, sortOrder: sortOrder, includeAllTypes: true }, onSearchHandler, this.options.searchTreeMethod);
         },
 
         getTree: function (sortOrder, onGetFirstLevelItemsCallback) {
             var onGetFirstLevelItemsHandler = $.proxy(this._onGetTree, this, onGetFirstLevelItemsCallback);
-            var callGetParams = { sortOrder: sortOrder, includeAllTypes: true };
-            if (this.options.includeDisabled) {
-                callGetParams.includeDisabled = this.options.includeDisabled;
-            }
-            this._callGet(callGetParams, onGetFirstLevelItemsHandler, this.options.getTreeMethod);
+            this._callGet({ sortOrder: sortOrder, includeAllTypes: true }, onGetFirstLevelItemsHandler, this.options.getTreeMethod);
         },
 
         sortTree: function (sortOrder, rootNode, searchText, onSortTreeCallback) {

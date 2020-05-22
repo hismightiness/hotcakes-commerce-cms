@@ -20,15 +20,16 @@
     <div class="dnnFormItem dnnCaptcha" id="divCaptcha2" runat="server" visible="false">
         <dnn:captchacontrol id="ctlCaptcha" captchawidth="130" captchaheight="40" runat="server" errorstyle-cssclass="dnnFormMessage dnnFormError dnnCaptcha" ViewStateMode="Disabled" />
     </div>
-    	<div class="dnnFormItem">
-		<asp:label id="lblLoginRememberMe" runat="server" CssClass="dnnFormLabel" />
-		<span class="dnnLoginRememberMe"><asp:checkbox id="chkCookie" resourcekey="Remember" runat="server" /></span>
-	</div>
     <div class="dnnFormItem">
         <asp:label id="lblLogin" runat="server" AssociatedControlID="cmdLogin" CssClass="dnnFormLabel" ViewStateMode="Disabled" />
         <asp:LinkButton id="cmdLogin" resourcekey="cmdLogin" cssclass="dnnPrimaryAction" text="Login" runat="server" CausesValidation="false" />
-		<asp:HyperLink id="cancelLink" runat="server" CssClass="dnnSecondaryAction" resourcekey="cmdCancel" CausesValidation="false" />        
+		<asp:HyperLink id="cancelLink" runat="server" CssClass="dnnSecondaryAction" resourcekey="cmdCancel" CausesValidation="false" />
+        
     </div>
+	<div class="dnnFormItem">
+		<asp:label id="lblLoginRememberMe" runat="server" CssClass="dnnFormLabel" />
+		<span class="dnnLoginRememberMe"><asp:checkbox id="chkCookie" resourcekey="Remember" runat="server" /></span>
+	</div>
     <div class="dnnFormItem">
         <span class="dnnFormLabel">&nbsp;</span>
         <div class="dnnLoginActions">
@@ -43,33 +44,14 @@
     <script type="text/javascript">
         /*globals jQuery, window, Sys */
         (function ($, Sys) {
-            const disabledActionClass = "dnnDisabledAction";
-            const actionLinks = $('a[id^="dnn_ctr<%=ModuleId > Null.NullInteger ? ModuleId.ToString() : ""%>_Login_Login_DNN"]');
-            function isActionDisabled($el) {
-                return $el && $el.hasClass(disabledActionClass);
-            }
-            function disableAction($el) {
-                if ($el == null || $el.hasClass(disabledActionClass)) {
-                    return;
-                }
-                $el.addClass(disabledActionClass);
-            }
-            function enableAction($el) {
-                if ($el == null) {
-                    return;
-                }
-                $el.removeClass(disabledActionClass);
-            }
-            function setUpLogin() {                
-                $.each(actionLinks || [], function (index, action) {
-                    var $action = $(action);
-                    $action.click(function () {
-                        var $el = $(this);
-                        if (isActionDisabled($el)) {
-                            return false;
-                        }
-                        disableAction($el);
-                    });
+            function setUpLogin() {
+                var actionLinks = $("a#dnn_ctr<%=ModuleId > Null.NullInteger ? ModuleId.ToString() : ""%>_Login_Login_DNN_cmdLogin");
+                actionLinks.click(function () {
+                    if ($(this).hasClass("dnnDisabledAction")) {
+                        return false;
+                    }
+
+                    actionLinks.addClass("dnnDisabledAction");
                 });
             }
 		
@@ -77,10 +59,11 @@
                 $(document).on('keydown', '.dnnLoginService', function (e) {
                     if ($(e.target).is('input:text,input:password') && e.keyCode === 13) {
                         var $loginButton = $('#dnn_ctr<%=ModuleId > Null.NullInteger ? ModuleId.ToString() : ""%>_Login_Login_DNN_cmdLogin');
-                        if (isActionDisabled($loginButton)) {
+                        if ($loginButton.hasClass("dnnDisabledAction")) {
                             return false;
                         }
-                        disableAction($loginButton);
+
+                        $loginButton.addClass("dnnDisabledAction");
                         window.setTimeout(function () { eval($loginButton.attr('href')); }, 100);
                         e.preventDefault();
                         return false;
@@ -89,9 +72,6 @@
 
                 setUpLogin();
                 Sys.WebForms.PageRequestManager.getInstance().add_endRequest(function () {
-                    $.each(actionLinks || [], function (index, item) {
-                        enableAction($(item));
-                    });
                     setUpLogin();
                 });
             });

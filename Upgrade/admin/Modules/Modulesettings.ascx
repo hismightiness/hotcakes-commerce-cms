@@ -99,8 +99,7 @@
             <fieldset>
                 <div>
                     <div class="dnnFormItem">
-                        <dnnweb:DnnGrid ID="dgOnTabs" runat="server" AutoGenerateColumns="False" AllowPaging="true" PageSize="20" ViewStateMode="Disabled" OnPageIndexChanging="dgOnTabs_PageIndexChanging">
-                            <PagerStyle CssClass = "dnn-grid-pager" />
+                        <dnnweb:DnnGrid ID="dgOnTabs" runat="server" AutoGenerateColumns="False" AllowPaging="true" PageSize="20" ViewStateMode="Disabled">
                                 <Columns>
                                     <dnnweb:DnnGridTemplateColumn HeaderText="Site" HeaderStyle-Width="150px">
                                         <ItemTemplate>

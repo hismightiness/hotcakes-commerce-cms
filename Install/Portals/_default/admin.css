@@ -129,6 +129,7 @@
 	}
 	/* Sub ul */
 	ul.dnnActionMenuBody li ul {
+		/*display:inline-block;*/
 		margin:0 0 12px 0;
 	}
 	ul.dnnActionMenuBody li ul li {
@@ -148,7 +149,7 @@
 	}
 	/* List of Form Actions */
 	.dnnActions {
-		display:block;
+		display:inline-block;
 	}
 	.dnnActions li {
 		margin-right:5px;
